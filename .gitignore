@@ -1,5 +1,10 @@
-*.png
-*.jpg
 */**/node_modules
 */**/package-lock.json
-*/next
+
+*.png
+*.jpg
+
+nature-craft/next
+nature-craft/eleventy
+umbrella-shop/eleventy
+umbrella-shop/html
