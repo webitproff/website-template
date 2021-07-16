@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import WorkTile from '../components/WorkTile'
+import { ourWorks } from './our-work/[path]'
 
-const images = [
+const sliders = [
   {
     copy: 'Photo by Nugroho Wahyu from Pexels',
     link: 'https://www.pexels.com/photo/brown-wooden-table-with-chair-3097112/',
@@ -26,7 +28,7 @@ export default function HomePage(){
   return <>
     <div className="uk-position-relative uk-light" tabIndex="-1" uk-slideshow="animation: fade; autoplay: true; ratio: false; pause-on-hover: false" uk-scrollspy="cls: uk-animation-fade; repeat: true">
       <ul className="uk-slideshow-items uk-height-viewport">
-        {images.map(({ copy, link, src, title }, index) => (
+        {sliders.map(({ copy, link, src, title }, index) => (
           <li key={index}>
             <img src={src} alt={copy} uk-cover="" />
             <div className="uk-position-center-right uk-position-large uk-text-right">
@@ -53,17 +55,17 @@ export default function HomePage(){
       </div>
       <nav className="uk-position-bottom-right uk-position-large uk-text-right">
         <Link href="/#about">
-          <a className="uk-button uk-button-default uk-button-large uk-margin-small-left uk-width-small">
+          <a className="uk-button uk-button-default uk-button-large uk-margin-small-left uk-width-small uk-text-nowrap">
             About
           </a>
         </Link>
-        <Link href="/#my-work">
-          <a className="uk-button uk-button-default uk-button-large uk-margin-small-left uk-width-small">
-            My Work
+        <Link href="/#our-work">
+          <a className="uk-button uk-button-secondary uk-button-large uk-margin-small-left uk-width-small uk-text-nowrap">
+            Our Works
           </a>
         </Link>
         <Link href="/#contact">
-          <a className="uk-button uk-button-default uk-button-large uk-margin-small-left uk-width-small">
+          <a className="uk-button uk-button-default uk-button-large uk-margin-small-left uk-width-small uk-text-nowrap">
             Contact
           </a>
         </Link>
@@ -71,10 +73,7 @@ export default function HomePage(){
     </div>
 
     <div className="uk-grid-match uk-grid-collapse" uk-grid="" uk-scrollspy="target: > div; cls: uk-animation-fade; repeat: true">
-      <div className="uk-width-1-6 uk-width-1-4@s uk-width-2-3@l uk-cover-container uk-height-viewport">
-        <img src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Photo by Lisa from Pexels" uk-cover="" />
-      </div>
-      <div className="uk-width-5-6 uk-width-3-4@s uk-width-1-3@l" id="about">
+      <div className="uk-width-5-6 uk-width-3-4@s uk-width-1-2@l" id="about">
         <div className="uk-padding-small uk-margin-auto-vertical">
           <div className="uk-flex uk-flex-wrap uk-flex-bottom">
             <h2 className="uk-heading-medium">
@@ -93,39 +92,34 @@ export default function HomePage(){
           </p>
         </div>
       </div>
+      <div className="uk-width-1-6 uk-width-1-4@s uk-width-1-2@l uk-cover-container uk-height-viewport">
+        <img src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Photo by Lisa from Pexels" uk-cover="" />
+      </div>
+
+      {ourWorks.slice(0,2).map(({ image, path, title }, index) => (
+        <div className="uk-width-1-1 uk-width-1-2@s" id={index === 0 ? 'our-work' : null} key={index}>
+          <WorkTile image={image} title={title}>
+            {index === 0 ? (
+              <Link href={`/our-work/${path}`}>
+                <a className="uk-button uk-button-secondary uk-button-large uk-margin-small-left">
+                  See
+                </a>
+              </Link>
+            ) : (
+              <Link href="/our-work">
+                <a className="uk-button uk-button-secondary uk-button-large uk-margin-small-left">
+                  See All
+                </a>
+              </Link>
+            )}
+          </WorkTile>
+        </div>
+      ))}
 
       <div className="uk-width-1-6 uk-width-1-4@s uk-width-1-2@l uk-cover-container uk-height-viewport">
-        <img src="https://images.pexels.com/photos/5490909/pexels-photo-5490909.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Photo by Rachel Claire from Pexels" uk-cover="" />
-      </div>
-      <div className="uk-width-5-6 uk-width-3-4@s uk-width-1-2@l">
-        <div className="uk-padding-small uk-margin-auto-vertical">
-          <div className="uk-flex uk-flex-wrap uk-flex-bottom">
-            <h2 className="uk-heading-medium">
-              My Work
-            </h2>
-            <blockquote>
-              <footer>
-                <a className="uk-link-muted" href="https://www.pexels.com/photo/interior-details-of-modern-bar-with-wooden-furniture-and-arched-wall-5490909/" target="_blank">
-                  Photo by Rachel Claire from Pexels
-                </a>
-              </footer>
-            </blockquote>
-          </div>
-          <p className="uk-text-large">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum tempora accusamus, accusantium ullam eius!
-          </p>
-          <Link href="/my-work">
-            <a className="uk-button uk-button-secondary uk-button-large">
-              More
-            </a>
-          </Link>
-        </div>
-      </div>
-
-      <div className="uk-width-1-6 uk-width-1-4@s uk-width-1-3@l uk-cover-container uk-height-viewport">
         <img src="https://images.pexels.com/photos/3205568/pexels-photo-3205568.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Photo by cottonbro from Pexels" uk-cover="" />
       </div>
-      <div className="uk-width-5-6 uk-width-3-4@s uk-width-2-3@l" id="contact">
+      <div className="uk-width-5-6 uk-width-3-4@s uk-width-1-2@l" id="contact">
         <div className="uk-padding-small uk-margin-auto-vertical">
           <div className="uk-flex uk-flex-wrap uk-flex-bottom">
             <h2 className="uk-heading-medium">
@@ -163,78 +157,6 @@ export default function HomePage(){
             </button>
           </form>
         </div>
-      </div>
-    </div>
-
-    <div className="uk-section uk-section-large" uk-scrollspy="cls: uk-animation-fade; repeat: true">
-      <div className="uk-container">
-        <div className="uk-child-width-1-2@s uk-child-width-1-4@l" uk-grid="">
-          <div>
-            <h3>
-              Source Used
-            </h3>
-            <ul className="uk-list uk-list-hyphen">
-              <li>
-                <a href="https://getuikit.com/" target="_blank">
-                  UIkit
-                </a>
-              </li>
-              <li>
-                <a href="https://www.pexels.com/" target="_blank">
-                  Pexels
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>
-              Made by
-            </h3>
-            <p>
-              <a href="https://zummon.page/" target="_blank">
-                zummon
-              </a>
-            </p>
-          </div>
-          <div>
-            <h3>
-              List Title
-            </h3>
-            <ul className="uk-list uk-list-hyphen">
-              <li>
-                <a href="#">
-                  Lorem, ipsum.
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Lorem, ipsum.
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Lorem, ipsum.
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Lorem, ipsum.
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>
-              Title
-            </h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta autem odio consectetur commodi, doloremque dolores?
-            </p>
-          </div>
-        </div>
-        <p className="uk-text-center uk-margin-large-top">
-          Copyright &copy; zummon
-        </p>
       </div>
     </div>
   </>
