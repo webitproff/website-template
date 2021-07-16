@@ -1,11 +1,13 @@
 */**/node_modules
 */**/package-lock.json
-*/**/.next
+
+*/next-react/.next
+*/next-react/out
 
 *.png
 *.jpg
 
 nature-craft/eleventy
-umbrella-shop/eleventy
-umbrella-shop/html
-umbrella-shop/next
+
+sunlight-interior/eleventy
+sunlight-interior/html
