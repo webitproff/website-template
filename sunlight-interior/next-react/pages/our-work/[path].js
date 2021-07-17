@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import HeadTag from '../../components/HeadTag'
+
 export const ourWorks = [
   {
     image: {
@@ -40,6 +43,28 @@ export const ourWorks = [
 export default function OurWork({ image: { copy, link, src }, title }){
 
   return <>
+    <HeadTag title={title + '| Our Works'} />
+
+    <div className="uk-section uk-section-muted" uk-scrollspy="target: > div; cls: uk-animation-fade; repeat: true">
+      <nav className="uk-container uk-text-center">
+        <Link href="/our-work">
+          <a className="uk-icon-link uk-margin-bottom uk-margin-right" uk-icon="icon: reply; ratio: 2"></a>
+        </Link>
+        <Link href="/">
+          <a className="uk-icon-link uk-margin-bottom uk-margin-right" uk-icon="icon: home; ratio: 2"></a>
+        </Link>
+        <Link href="/#about">
+          <a className="uk-button uk-button-default uk-margin-bottom uk-margin-right">
+            About
+          </a>
+        </Link>
+        <Link href="/#contact">
+          <a className="uk-button uk-button-default uk-margin-bottom uk-margin-right">
+            Contact
+          </a>
+        </Link>
+      </nav>
+    </div>
 
     <div className="uk-section uk-section-large" uk-scrollspy="cls: uk-animation-fade; repeat: true">
       <div className="uk-container uk-container-small">

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import WorkTile from '../components/WorkTile'
+import HeadTag from '../components/HeadTag'
 import { ourWorks } from './our-work/[path]'
 
 const sliders = [
@@ -26,6 +27,8 @@ const sliders = [
 export default function HomePage(){
 
   return <>
+    <HeadTag />
+
     <div className="uk-position-relative uk-light" tabIndex="-1" uk-slideshow="animation: fade; autoplay: true; ratio: false; pause-on-hover: false" uk-scrollspy="cls: uk-animation-fade; repeat: true">
       <ul className="uk-slideshow-items uk-height-viewport">
         {sliders.map(({ copy, link, src, title }, index) => (
@@ -96,9 +99,9 @@ export default function HomePage(){
         <img src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1280" alt="Photo by Lisa from Pexels" uk-cover="" />
       </div>
 
-      {ourWorks.slice(0,2).map(({ image, path, title }, index) => (
-        <div className="uk-width-1-1 uk-width-1-2@s" id={index === 0 ? 'our-work' : null} key={index}>
-          <WorkTile image={image} title={title}>
+      {ourWorks.slice(0,2).map(({ image, path }, index) => (
+        <div className="uk-width-1-2" id={index === 0 ? 'our-work' : null} key={index}>
+          <WorkTile image={image} title={index === 0 ? 'Our' : 'Works'}>
             {index === 0 ? (
               <Link href={`/our-work/${path}`}>
                 <a className="uk-button uk-button-secondary uk-button-large uk-margin-small-left">
