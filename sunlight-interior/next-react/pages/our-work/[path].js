@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import WorkHeader from '../../components/WorkHeader'
 import HeadTag from '../../components/HeadTag'
 
 export const ourWorks = [
@@ -10,6 +10,23 @@ export const ourWorks = [
     },
     path: '1',
     title: 'House with Arched Wall',
+    content: {
+      date: {
+        start: 'July 12, 2021',
+        finish: 'July 17, 2021',
+      },
+      texts: [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, suscipit?',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.',
+      ],
+      images: [
+        'https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&w=640',
+        'https://images.pexels.com/photos/6585764/pexels-photo-6585764.jpeg?auto=compress&cs=tinysrgb&w=640',
+        'https://images.pexels.com/photos/5696287/pexels-photo-5696287.jpeg?auto=compress&cs=tinysrgb&w=640',
+      ],
+      place: '2503 Saint Francis Way',
+    }
   },
   {
     image: {
@@ -19,6 +36,23 @@ export const ourWorks = [
     },
     path: '2',
     title: 'Hotel House with Table Luxury',
+    content: {
+      date: {
+        start: 'July 12, 2021',
+        finish: 'July 17, 2021',
+      },
+      texts: [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, suscipit?',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.',
+      ],
+      images: [
+        'https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&w=640',
+        'https://images.pexels.com/photos/6585764/pexels-photo-6585764.jpeg?auto=compress&cs=tinysrgb&w=640',
+        'https://images.pexels.com/photos/5696287/pexels-photo-5696287.jpeg?auto=compress&cs=tinysrgb&w=640',
+      ],
+      place: '2503 Saint Francis Way',
+    }
   },
   {
     image: {
@@ -28,6 +62,23 @@ export const ourWorks = [
     },
     path: '3',
     title: 'House with Arched Wall',
+    content: {
+      date: {
+        start: 'July 12, 2021',
+        finish: 'July 17, 2021',
+      },
+      texts: [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, suscipit?',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.',
+      ],
+      images: [
+        'https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&w=640',
+        'https://images.pexels.com/photos/6585764/pexels-photo-6585764.jpeg?auto=compress&cs=tinysrgb&w=640',
+        'https://images.pexels.com/photos/5696287/pexels-photo-5696287.jpeg?auto=compress&cs=tinysrgb&w=640',
+      ],
+      place: '2503 Saint Francis Way',
+    }
   },
   {
     image: {
@@ -37,44 +88,75 @@ export const ourWorks = [
     },
     path: '4',
     title: 'Hotel House with Table Luxury',
+    content: {
+      date: {
+        start: 'July 12, 2021',
+        finish: 'July 17, 2021',
+      },
+      texts: [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.',
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, suscipit?',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.',
+      ],
+      images: [
+        'https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&w=640',
+        'https://images.pexels.com/photos/6585764/pexels-photo-6585764.jpeg?auto=compress&cs=tinysrgb&w=640',
+        'https://images.pexels.com/photos/5696287/pexels-photo-5696287.jpeg?auto=compress&cs=tinysrgb&w=640',
+      ],
+      place: '2503 Saint Francis Way',
+    }
   },
 ]
 
-export default function OurWork({ image: { copy, link, src }, title }){
+export default function OurWork({ image: { copy, link, src }, title, content: { date, texts, images, place } }){
 
   return <>
-    <HeadTag title={title + '| Our Works'} />
+    <HeadTag title={title + ' - Our Works'} />
 
-    <div className="uk-section uk-section-muted" uk-scrollspy="target: > div; cls: uk-animation-fade; repeat: true">
-      <nav className="uk-container uk-text-center">
-        <Link href="/our-work">
-          <a className="uk-icon-link uk-margin-bottom uk-margin-right" uk-icon="icon: reply; ratio: 2"></a>
-        </Link>
-        <Link href="/">
-          <a className="uk-icon-link uk-margin-bottom uk-margin-right" uk-icon="icon: home; ratio: 2"></a>
-        </Link>
-        <Link href="/#about">
-          <a className="uk-button uk-button-default uk-margin-bottom uk-margin-right">
-            About
-          </a>
-        </Link>
-        <Link href="/#contact">
-          <a className="uk-button uk-button-default uk-margin-bottom uk-margin-right">
-            Contact
-          </a>
-        </Link>
-      </nav>
-    </div>
+    <WorkHeader back={true} />
 
-    <div className="uk-section uk-section-large" uk-scrollspy="cls: uk-animation-fade; repeat: true">
+    <div className="uk-section uk-section-large uk-section-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true">
       <div className="uk-container uk-container-small">
         <h2 className="uk-heading-medium">
           {title}
         </h2>
-        <img src={src} alt={copy} />
-        <a className="uk-link-muted" href={link} target="_blank">
-          {copy}
-        </a>
+        <blockquote>
+          <footer>
+            <a className="uk-link-muted" href={link} target="_blank">
+              {copy}
+            </a>
+          </footer>
+        </blockquote>
+        <ul className="uk-list uk-text-large">
+          <li>
+            Start: {date.start}
+          </li>
+          <li>
+            Finish: {date.finish}
+          </li>
+          <li>
+            Place: {place}
+          </li>
+        </ul>
+        {texts.map((item, index) => (
+          <p key={index} className={index === 0 ? 'uk-text-lead' : ''}>
+            {item}
+          </p>
+        ))}
+        <div className="uk-child-width-1-2@m" uk-grid="masonry: true" uk-lightbox="animation: fade">
+          <div>
+            <a className="uk-inline" href={src}>
+              <img src={src} alt={copy} />
+            </a>
+          </div>
+          {images.map((item, index) => (
+            <div key={`i-${index}`}>
+              <a className="uk-inline" href={item}>
+                <img src={item} />
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   </>

@@ -1,7 +1,7 @@
 export default function Footer(){
 
   return (
-    <div className="uk-section uk-section-large" uk-scrollspy="cls: uk-animation-fade; repeat: true">
+    <footer className="uk-section uk-section-large" uk-scrollspy="cls: uk-animation-fade; repeat: true">
       <div className="uk-container uk-text-center">
         <div className="uk-child-width-1-2@s uk-child-width-1-4@l" uk-grid="">
           <div>
@@ -71,6 +71,6 @@ export default function Footer(){
           Copyright &copy; zummon
         </p>
       </div>
-    </div>
+    </footer>
   )  
 }

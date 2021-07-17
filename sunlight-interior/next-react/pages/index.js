@@ -29,7 +29,7 @@ export default function HomePage(){
   return <>
     <HeadTag />
 
-    <div className="uk-position-relative uk-light" tabIndex="-1" uk-slideshow="animation: fade; autoplay: true; ratio: false; pause-on-hover: false" uk-scrollspy="cls: uk-animation-fade; repeat: true">
+    <header className="uk-position-relative uk-light" tabIndex="-1" uk-slideshow="animation: fade; autoplay: true; ratio: false; pause-on-hover: false" uk-scrollspy="cls: uk-animation-fade; repeat: true">
       <ul className="uk-slideshow-items uk-height-viewport">
         {sliders.map(({ copy, link, src, title }, index) => (
           <li key={index}>
@@ -58,22 +58,22 @@ export default function HomePage(){
       </div>
       <nav className="uk-position-bottom-right uk-position-large uk-text-right">
         <Link href="/#about">
-          <a className="uk-button uk-button-default uk-button-large uk-margin-small-left uk-width-small uk-text-nowrap">
+          <a className="uk-button uk-button-default uk-button-large uk-margin-small-left uk-text-nowrap">
             About
           </a>
         </Link>
         <Link href="/#our-work">
-          <a className="uk-button uk-button-secondary uk-button-large uk-margin-small-left uk-width-small uk-text-nowrap">
+          <a className="uk-button uk-button-secondary uk-button-large uk-margin-small-left uk-text-nowrap">
             Our Works
           </a>
         </Link>
         <Link href="/#contact">
-          <a className="uk-button uk-button-default uk-button-large uk-margin-small-left uk-width-small uk-text-nowrap">
+          <a className="uk-button uk-button-default uk-button-large uk-margin-small-left uk-text-nowrap">
             Contact
           </a>
         </Link>
       </nav>
-    </div>
+    </header>
 
     <div className="uk-grid-match uk-grid-collapse" uk-grid="" uk-scrollspy="target: > div; cls: uk-animation-fade; repeat: true">
       <div className="uk-width-5-6 uk-width-3-4@s uk-width-1-2@l" id="about">
@@ -111,7 +111,7 @@ export default function HomePage(){
             ) : (
               <Link href="/our-work">
                 <a className="uk-button uk-button-secondary uk-button-large uk-margin-small-left">
-                  See All
+                  All
                 </a>
               </Link>
             )}
