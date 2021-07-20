@@ -115,8 +115,8 @@ export default function OurWork({ image: { copy, link, src }, title, content: { 
 
     <WorkHeader back={true} />
 
-    <div className="uk-section uk-section-large uk-section-muted" uk-scrollspy="cls: uk-animation-fade; repeat: true">
-      <div className="uk-container uk-container-small">
+    <div className="uk-section uk-section-large uk-section-muted">
+      <div className="uk-container uk-container-small" uk-scrollspy="target: > *; cls: uk-animation-fade; repeat: true">
         <h2 className="uk-heading-medium">
           {title}
         </h2>

@@ -1,6 +1,15 @@
+import { getAllBlogs } from '../functions'
 
+export function getStaticProps(){
 
-export default function HomePage(){
+  return {
+    props: {
+      blogs: getAllBlogs().slice(0,4)
+    }
+  }
+}
+
+export default function HomePage({ blogs }){
 
   return <>
     

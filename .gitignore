@@ -1,13 +1,7 @@
 */**/node_modules
 */**/package-lock.json
 
+*/eleventy/_site
+
 */nextjs/.next
 */nextjs/out
-
-*.png
-*.jpg
-
-nature-craft/eleventy
-
-sunlight-interior/eleventy
-sunlight-interior/html

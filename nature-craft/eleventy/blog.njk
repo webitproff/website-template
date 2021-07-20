@@ -1,0 +1,30 @@
+---
+title: Blog
+---
+
+<div class="uk-container">
+  <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+    {% for blog in collections.blogs %}
+    <div class="uk-card {{ 'uk-card-secondary' if loop.index === 1 else 'uk-card-default' }}">
+      <div class="uk-card-header">
+        <h3 class="uk-card-title uk-margin-remove-bottom">
+          {{ blog.data.title }}
+        </h3>
+        <p class="uk-text-meta uk-margin-remove-top">
+          <time>
+            {{ blog.data.date }}
+          </time>
+        </p>
+      </div>
+      <div class="uk-card-body">
+        {{ blog.data.description }}
+      </div>
+      <div class="uk-card-footer uk-text-right uk-text-left@m">
+        <a class="uk-button uk-button-text" href="{{ blog.url }}">
+          Read
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

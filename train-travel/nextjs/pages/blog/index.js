@@ -1,11 +1,20 @@
 import Link from 'next/link'
-import { getAllBlogs } from './[path]'
+import { getAllBlogs } from '../../functions'
 
-export default function BlogPage(){
+export function getStaticProps(){
+
+  return {
+    props: {
+      blogs: getAllBlogs()
+    }
+  }
+}
+
+export default function BlogPage({ blogs }){
 
   return <>
 
-    {getAllBlogs().map(({ date, description, imageCopy, imageLink, imageSrc, title, path }, index) => (
+    {blogs.map(({ date, description, imageCopy, imageLink, imageSrc, title, path }, index) => (
       <div className="flex" key={index}>
         <div className="flex-1 px-4">
           <img className="max-w-full" src={imageSrc} alt={imageCopy} />

@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function WorkHeader({ back }){
 
   return (
-    <header className="uk-section uk-section-secondary" uk-scrollspy="target: > div; cls: uk-animation-fade; repeat: true">
+    <header className="uk-section uk-section-secondary" uk-scrollspy="target: > nav; cls: uk-animation-fade; repeat: true">
       <nav className="uk-container uk-text-center">
         {back && (
           <Link href="/our-work">
