@@ -1,0 +1,78 @@
+[
+  {
+    "image": {
+      "copy": "Photo by Juan Vargas from Pexels",
+      "link": "https://www.pexels.com/photo/figurine-of-cute-owl-on-table-5922834/",
+      "src": "https://images.pexels.com/photos/5922834/pexels-photo-5922834.jpeg?auto=compress&cs=tinysrgb&w=640"
+    },
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "invert": true,
+    "path": "1",
+    "title": "Figurine of cute owl on table",
+    "steps": [
+      {
+        "imageSrc": "https://images.pexels.com/photos/5922834/pexels-photo-5922834.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi harum obcaecati id."
+      },
+      {
+        "imageSrc": "https://images.pexels.com/photos/5922834/pexels-photo-5922834.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis eligendi adipisci, enim fugiat assumenda."
+      }
+    ]
+  },
+  {
+    "image": {
+      "copy": "Photo by Ioana Motoc from Pexels",
+      "link": "https://www.pexels.com/photo/creative-eggs-in-nest-on-table-4346320/",
+      "src": "https://images.pexels.com/photos/4346320/pexels-photo-4346320.jpeg?auto=compress&cs=tinysrgb&w=640"
+    },
+    "description": "Eveniet delectus doloribus modi saepe perferendis.",
+    "invert": false,
+    "path": "2",
+    "title": "Creative eggs in nest on table",
+    "steps": [
+      {
+        "imageSrc": "https://images.pexels.com/photos/4346320/pexels-photo-4346320.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis eligendi adipisci, enim fugiat assumenda."
+      }
+    ]
+  },
+  {
+    "image": {
+      "copy": "Photo by Juan Vargas from Pexels",
+      "link": "https://www.pexels.com/photo/figurine-of-cute-owl-on-table-5922834/",
+      "src": "https://images.pexels.com/photos/5922834/pexels-photo-5922834.jpeg?auto=compress&cs=tinysrgb&w=640"
+    },
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "invert": false,
+    "path": "3",
+    "title": "Figurine of cute owl on table",
+    "steps": [
+      {
+        "imageSrc": "https://images.pexels.com/photos/5922834/pexels-photo-5922834.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi harum obcaecati id."
+      },
+      {
+        "imageSrc": "https://images.pexels.com/photos/5922834/pexels-photo-5922834.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis eligendi adipisci, enim fugiat assumenda."
+      }
+    ]
+  },
+  {
+    "image": {
+      "copy": "Photo by Ioana Motoc from Pexels",
+      "link": "https://www.pexels.com/photo/creative-eggs-in-nest-on-table-4346320/",
+      "src": "https://images.pexels.com/photos/4346320/pexels-photo-4346320.jpeg?auto=compress&cs=tinysrgb&w=640"
+    },
+    "description": "Eveniet delectus doloribus modi saepe perferendis.",
+    "invert": false,
+    "path": "4",
+    "title": "Creative eggs in nest on table",
+    "steps": [
+      {
+        "imageSrc": "https://images.pexels.com/photos/4346320/pexels-photo-4346320.jpeg?auto=compress&cs=tinysrgb&w=640",
+        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis eligendi adipisci, enim fugiat assumenda."
+      }
+    ]
+  }
+]

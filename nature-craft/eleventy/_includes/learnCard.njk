@@ -1,0 +1,21 @@
+<div class={`uk-card ${invert ? 'uk-card-secondary' : 'uk-card-default'}`}>
+  <div class="uk-card-media-top uk-height-medium uk-background-cover" 
+    style={{ backgroundImage: `url(${src}) `}}
+  ></div>
+  <div class="uk-card-body">
+    <h3 class="uk-card-title">
+      {title}
+    </h3>
+    <p>
+      {description}
+      <a href={link} target="_blank">
+        {copy}
+      </a>
+    </p>
+    <Link href={`/learn/${path}`}>
+      <a class="uk-button uk-button-secondary">
+        Learn
+      </a>
+    </Link>
+  </div>
+</div>

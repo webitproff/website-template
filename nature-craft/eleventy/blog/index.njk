@@ -1,0 +1,18 @@
+---
+title: Blog
+description: Lorem ipsum dolor sit amet consectetur.
+---
+
+{% include 'mediumHeader.njk' %}
+
+<div class="uk-section uk-section-muted">
+  <div class="uk-container">
+    <div class="uk-child-width-1-2@m" uk-grid="masonry: true">
+      {% for item in blogs %}
+        <div>
+          <BlogCard {...item} />
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

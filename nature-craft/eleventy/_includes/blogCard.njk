@@ -1,0 +1,22 @@
+<div class={`uk-card ${invert ? 'uk-card-secondary' : 'uk-card-default'}`}>
+  <div class="uk-card-header">
+    <h3 class="uk-card-title uk-margin-remove-bottom">
+      {title}
+    </h3>
+    <p class="uk-text-meta uk-margin-remove-top">
+      <time>
+        {date}
+      </time>
+    </p>
+  </div>
+  <div class="uk-card-body">
+    {description}
+  </div>
+  <div class="uk-card-footer uk-text-right uk-text-left@m">
+    <Link href={`/blog/${path}`}>
+      <a class="uk-button uk-button-text">
+        Read
+      </a>
+    </Link>
+  </div>
+</div>

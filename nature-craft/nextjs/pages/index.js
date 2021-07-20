@@ -105,7 +105,7 @@ export default function HomePage(){
           <p className="uk-h4 uk-margin uk-margin-top">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id doloremque accusantium at cupiditate quaerat temporibus?
           </p>
-          <a href="#" className="uk-icon-button uk-margin-large-right" uk-icon="icon: lifesaver; ratio: 2"></a>
+          <a href="#" className="uk-icon-button uk-margin-right" uk-icon="icon: lifesaver; ratio: 2"></a>
           <a href="#" className="uk-icon-button" uk-icon="icon: credit-card; ratio: 2"></a>
           <hr />
           <h2>
