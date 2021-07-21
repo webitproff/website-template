@@ -5,13 +5,13 @@
         href="../index.html"></a>
     {% endif %}
     <a class="uk-button uk-button-link uk-text-large uk-margin-bottom uk-margin-right" uk-icon="icon: home; ratio: 2" 
-      href="{{ '../..' if back else '..' }}/index.html"></a>
+      href="{{ '../' if back }}../index.html"></a>
     <a class="uk-button uk-button-link uk-text-large uk-margin-bottom uk-margin-right" 
-      href="{{ '../..' if back else '..' }}/index.html#about">
+      href="{{ '../' if back }}../index.html#about">
       About
     </a>
     <a class="uk-button uk-button-link uk-text-large uk-margin-bottom uk-margin-right" 
-      href="{{ '../..' if back else '..' }}/index.html#contact">
+      href="{{ '../' if back }}../index.html#contact">
       Contact
     </a>
   </nav>

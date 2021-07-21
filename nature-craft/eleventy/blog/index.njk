@@ -10,7 +10,26 @@ description: Lorem ipsum dolor sit amet consectetur.
     <div class="uk-child-width-1-2@m" uk-grid="masonry: true">
       {% for item in blogs %}
         <div>
-          <BlogCard {...item} />
+          <div class="uk-card {{ 'uk-card-secondary' if item.invert else 'uk-card-default' }}">
+            <div class="uk-card-header">
+              <h3 class="uk-card-title uk-margin-remove-bottom">
+                {{ item.title }}
+              </h3>
+              <p class="uk-text-meta uk-margin-remove-top">
+                <time>
+                  {{ item.date }}
+                </time>
+              </p>
+            </div>
+            <div class="uk-card-body">
+              {{ item.description }}
+            </div>
+            <div class="uk-card-footer uk-text-right uk-text-left@m">
+              <a class="uk-button uk-button-text" href="{{ item.path }}/index.html">
+                Read
+              </a>
+            </div>
+          </div>
         </div>
       {% endfor %}
     </div>
