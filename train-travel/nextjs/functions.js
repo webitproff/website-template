@@ -1,22 +1,32 @@
+import remark from 'remark'
+import html from 'remark-html'
 import matter from 'gray-matter'
 import { join } from 'path'
 import { readdirSync, readFileSync } from 'fs'
 
 const directory = join(process.cwd(), 'blogs')
 
-export const getBlogPaths = () => (
-  readdirSync(directory) // ['1.md','2.md']
-  .map(file => file.slice(0, -3)) // ['1','2']
-)
+export const getBlogPaths = () => {
 
-export const getBlog = (path) => ( // '1'
-  matter(
+  return readdirSync(directory) // ['1.md','2.md']
+    .map(file => file.slice(0, -3)) // ['1','2']
+}
+
+export const getBlog = (path) => { // '1'
+  const { data, content } = matter(
     readFileSync(
       join(directory, path +'.md')
     )
-  ) // { data: { date, title }, content }
-)
+  )
+  return {
+    ...data, 
+    content: remark().use(html).process(content).toString(), 
+    path 
+  }
+}
 
-export const getAllBlogs = () => (
-  getBlogPaths().map(path => getBlog(path)) // [ { data, content }, { data, content } ]
-)
+export const getAllBlogs = () => {
+
+  return getBlogPaths().map(path => getBlog(path))
+  // [ { data, content }, { data, content } ]
+}
