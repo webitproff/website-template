@@ -1,0 +1,32 @@
+---
+title: Our Works
+---
+
+{% include 'workHeader.njk' %}
+
+<div class="uk-grid-match uk-grid-collapse" uk-grid="" uk-scrollspy="target: > div; cls: uk-animation-fade; repeat: true">
+  {% for item in ourWorks %}
+    <div class="uk-width-1-1 uk-width-1-2@s">
+      <div class="uk-cover-container uk-height-viewport uk-light">
+        <img src="{{ item.image.src }}" alt="{{ item.image.copy }}" uk-cover="" />
+        <div class="uk-position-center uk-position-small uk-text-center">
+          <h2 class="uk-heading-medium">
+            {{ item.title }}
+          </h2>
+          <a class="uk-button uk-button-secondary uk-button-large uk-margin-small-left" href="{{ item.path }}/index.html">
+            See
+          </a>
+        </div>
+        <div class="uk-position-bottom-right uk-position-small">
+          <blockquote>
+            <footer>
+              <a class="uk-link-muted" href="{{ item.image.link }}" target="_blank">
+                {{ item.image.copy }}
+              </a>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

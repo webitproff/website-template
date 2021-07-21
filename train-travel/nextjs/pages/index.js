@@ -1,34 +1,15 @@
 import Link from 'next/link'
 import { getAllBlogs } from '../functions'
 
-export function getStaticProps(){
-
-  return {
-    props: {
-      blogs: getAllBlogs().slice(0,4)
-    }
-  }
-}
-
 export default function HomePage({ blogs }){
 
   return <>
-    
-    <div className="max-w-prose">
-      
-    </div>
-
     {blogs.map(({ date, description, imageCopy, imageLink, imageSrc, title, path }, index) => (
-      <div className="flex" key={index}>
-        <div className="flex-1 px-4">
-          <img className="max-w-full" src={imageSrc} alt={imageCopy} />
-          <p>
-            <a href={imageLink} target="_blank">
-              {imageCopy}
-            </a>
-          </p>
+      <div className="sm:flex" key={index}>
+        <div className="flex-1 my-auto">
+          <img className="max-w-full max-h-96 mx-auto" src={imageSrc} alt={imageCopy} />
         </div>
-        <div className="flex-1 px-4">
+        <div className="flex-1 my-auto sm:pl-4">
           <h2>
             {title}
           </h2>
@@ -37,15 +18,28 @@ export default function HomePage({ blogs }){
           </p>
           <p>
             {description}
-          </p>
-          <Link href={`/blog/${path}`}>
-            <a>
-              Read
+            <a href={imageLink} target="_blank" className="!no-underline">
+              {imageCopy}
             </a>
-          </Link>
+          </p>
+          <p>
+            <Link href={`/blog/${path}`}>
+              <a className="!no-underline">
+                Read more
+              </a>
+            </Link>
+          </p>
         </div>
       </div>
     ))}
-
   </>
+}
+
+export function getStaticProps(){
+
+  return {
+    props: {
+      blogs: getAllBlogs().slice(0,4)
+    }
+  }
 }

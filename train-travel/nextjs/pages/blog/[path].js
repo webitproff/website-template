@@ -1,9 +1,11 @@
+import remark from 'remark'
+import html from 'remark-html'
 import { getBlogPaths, getBlog } from '../../functions'
 
-export default function Blog({ content, date, description, title }){
+export default function Blog({ contentHtml, date, description, title }){
 
   return <>
-    <div className="max-w-prose text-center">
+    <div className="max-w-prose mx-auto text-center">
       <h1>
         {title}
       </h1>
@@ -14,7 +16,7 @@ export default function Blog({ content, date, description, title }){
         {description}
       </p>
     </div>
-    <div className="max-w-prose" dangerouslySetInnerHTML={{ __html: content }} />
+    <div className="max-w-prose mx-auto" dangerouslySetInnerHTML={{ __html: contentHtml }} />
   </>
 }
 
@@ -27,9 +29,12 @@ export function getStaticPaths(){
     fallback: false
   }
 }
-export function getStaticProps({ params: { path } }){
-
+export async function getStaticProps({ params: { path } }){
+  const { content, ...others } = getBlog(path)
   return {
-    props: getBlog(path)
+    props: { 
+      ...others, 
+      contentHtml: await remark().use(html).process(content).then(res => res.toString()), 
+    } 
   }
 }

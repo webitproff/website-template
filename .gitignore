@@ -2,7 +2,7 @@
 */**/package-lock.json
 
 # Try fix Github page error
-*/eleventy
+# */eleventy
 */eleventy/_site
 
 */nextjs/.next

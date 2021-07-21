@@ -1,0 +1,57 @@
+---
+back: true
+pagination:
+  data: ourWorks
+  size: 1
+  alias: item
+permalink: "our-work/{{ item.path | slug }}/index.html"
+eleventyComputed:
+  title: "{{ item.title }} - Our Works"
+---
+
+{% include 'workHeader.njk' %}
+
+<div class="uk-section uk-section-large uk-section-muted">
+  <div class="uk-container uk-container-small" uk-scrollspy="target: > *; cls: uk-animation-fade; repeat: true">
+    <h2 class="uk-heading-medium">
+      {{ item.title }}
+    </h2>
+    <blockquote>
+      <footer>
+        <a class="uk-link-muted" href="{{ item.image.link }}" target="_blank">
+          {{ item.image.copy }}
+        </a>
+      </footer>
+    </blockquote>
+    <ul class="uk-list uk-text-large">
+      <li>
+        Start: {{ item.content.date.start }}
+      </li>
+      <li>
+        Finish: {{ item.content.date.finish }}
+      </li>
+      <li>
+        Place: {{ item.content.place }}
+      </li>
+    </ul>
+    {% for text in item.content.texts %}
+      <p class="{{ 'uk-text-lead' if loop.first }}">
+        {{ text }}
+      </p>
+    {% endfor %}
+    <div class="uk-child-width-1-2@m" uk-grid="masonry: true" uk-lightbox="animation: fade">
+      <div>
+        <a class="uk-inline" href="{{ item.image.src }}">
+          <img src="{{ item.image.src }}" alt="{{ item.image.copy }}" />
+        </a>
+      </div>
+      {% for i in item.content.images %}
+        <div>
+          <a class="uk-inline" href="{{ i }}">
+            <img src="{{ i }}" />
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
