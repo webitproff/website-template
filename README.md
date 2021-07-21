@@ -4,13 +4,11 @@ All folders you see here are the website template names.
 
 - nature-craft
 - sunlight-interior
-- train-travel
 ...
 
 Go deep one level. Each one contains codes or framework name, that I use to make the website.
 
 - html
-- eleventy
 - nextjs
 ...
 
