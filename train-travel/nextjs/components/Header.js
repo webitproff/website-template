@@ -3,10 +3,15 @@ import Link from 'next/link'
 export default function Header(){
     
   return (
-    <header className="max-w-screen-lg mx-auto flex flex-wrap">
+    <header className="max-w-screen-lg mx-auto flex flex-wrap mb-8">
       <div className="flex flex-wrap">
         <h2>
           Train Travel
+          <span className="pl-4">
+            {/* plan to open darkmode */}
+            <i className="fas fa-moon  inline dark:hidden" />
+            <i className="fas fa-sun  hidden dark:inline" />
+          </span>
         </h2>
       </div>
       <nav className="flex flex-wrap ml-auto divide-x">
@@ -17,7 +22,7 @@ export default function Header(){
         </Link>
         <Link href="/blog">
           <a className="px-4 my-auto !no-underline">
-            Blogs
+            Blog
           </a>
         </Link>
         <Link href="/about">
