@@ -1,17 +1,17 @@
 import Link from 'next/link'
 
-export default function Header(){
+export default function Header({ title }){
     
   return (
     <header className="max-w-screen-lg mx-auto flex flex-wrap mb-8">
       <div className="flex flex-wrap">
         <h2>
-          Train Travel
-          <span className="pl-4">
-            {/* plan to open darkmode */}
+          {title && 'Train Travel'}
+          {/* <span className="pl-4">
+            plan to have darkmode
             <i className="fas fa-moon  inline dark:hidden" />
             <i className="fas fa-sun  hidden dark:inline" />
-          </span>
+          </span> */}
         </h2>
       </div>
       <nav className="flex flex-wrap ml-auto divide-x">

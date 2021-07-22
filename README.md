@@ -12,8 +12,13 @@
 - [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/sunlight-interior/html), [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/sunlight-interior/nextjs), [11ty](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/sunlight-interior/eleventy)
 
 ## Train Travel
-- Coming soon
+- 1 home page, 1 collection page.
+- 4 subpages in the example and add more subpages by writing markdown files.
+- Demo is comming.
+- [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/train-travel/nextjs)
 
 ---
 
 Useful tool to help downloading the template - [DownGit](https://downgit.github.io/) by [Minhas Kamal](https://stackoverflow.com/users/4684058/minhas-kamal) from the [issue](https://stackoverflow.com/questions/7106012/)
+
+Useful sources to build websites - [design-resources-for-developers](https://github.com/bradtraversy/design-resources-for-developers) by Traversy Media

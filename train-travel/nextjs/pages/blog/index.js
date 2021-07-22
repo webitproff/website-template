@@ -13,9 +13,9 @@ export default function BlogPage({ blogs }){
           <h2>
             {title}
           </h2>
-          <p>
+          <blockquote>
             {date}
-          </p>
+          </blockquote>
           <p>
             {excerpt}
             <a href={imageLink} target="_blank" className="!no-underline">
@@ -24,7 +24,7 @@ export default function BlogPage({ blogs }){
           </p>
           <p>
             <Link href={`/blog/${path}`}>
-              <a className="!no-underline">
+              <a>
                 Read more
               </a>
             </Link>

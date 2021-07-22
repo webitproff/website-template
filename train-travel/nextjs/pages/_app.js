@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps }){
       <title>{title ? title +' - ' : ''}Train Travel</title>
     </Head>
     <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none sm:max-w-none lg:max-w-none xl:max-w-none px-4">
-      <Header />
+      <Header title={title} />
       <Component {...pageProps} />
       <Footer />
     </div>
