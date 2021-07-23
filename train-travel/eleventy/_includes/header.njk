@@ -1,0 +1,29 @@
+<header class="max-w-screen-lg mx-auto flex flex-wrap mb-8">
+  <div class="flex flex-wrap">
+    <h2>
+      {{ 'Train Travel' if title }}
+      <!-- <span class="pl-4">
+        plan to have darkmode
+        <i class="fas fa-moon  inline dark:hidden" />
+        <i class="fas fa-sun  hidden dark:inline" />
+      </span> -->
+    </h2>
+  </div>
+  <nav class="flex flex-wrap ml-auto divide-x divide-gray-200">
+    <a class="px-4 my-auto !no-underline" href="{% if back -%}
+      {% for i in range(0, back) %}../{% endfor %}
+    {%- endif %}index.html">
+      Home
+    </a>
+    <a class="px-4 my-auto !no-underline" href="{% if back -%}
+      {% for i in range(0, back) %}../{% endfor %}
+    {%- endif %}blog/index.html">
+      Blog
+    </a>
+    <a class="px-4 my-auto !no-underline" href="{% if back -%}
+      {% for i in range(0, back) %}../{% endfor %}
+    {%- endif %}about/index.html">
+      About
+    </a>
+  </nav>
+</header>

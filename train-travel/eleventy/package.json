@@ -1,0 +1,16 @@
+{
+  "name": "eleventy",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "eleventy --serve && npx tailwindcss -o _site/tailwind.css --serve",
+    "build": "eleventy && npx tailwindcss -o _site/tailwind.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.6"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1"
+  }
+}

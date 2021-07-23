@@ -12,10 +12,10 @@
 - [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/sunlight-interior/html), [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/sunlight-interior/nextjs), [11ty](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/sunlight-interior/eleventy)
 
 ## Train Travel
-- 1 home page, 1 collection page.
-- 4 subpages in the example and add more subpages by writing markdown files.
-- Demo is comming.
-- [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/train-travel/nextjs)
+- home, about, blog page.
+- 4 subpages in the example and add more subpages by writing markdowns.
+- [Demo](https://zummon.github.io/website-template/train-travel/html/index.html)
+- [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/train-travel/html), [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/train-travel/nextjs), [11ty](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/train-travel/eleventy)
 
 ---
 

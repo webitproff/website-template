@@ -14,7 +14,7 @@ export default function Header({ title }){
           </span> */}
         </h2>
       </div>
-      <nav className="flex flex-wrap ml-auto divide-x">
+      <nav className="flex flex-wrap ml-auto divide-x divide-gray-200">
         <Link href="/">
           <a className="px-4 my-auto !no-underline">
             Home

@@ -1,0 +1,31 @@
+---
+title: Blog
+back: 1
+---
+
+{% for item in collections.blogs %}
+<div class="sm:flex">
+  <div class="flex-1 my-auto">
+    <img class="w-full object-cover h-56 sm:h-72 md:h-96" src="{{ item.data.imageSrc }}" alt="{{ item.data.imageCopy }}" />
+  </div>
+  <div class="flex-1 my-auto sm:pl-4">
+    <h2>
+      {{ item.data.title }}
+    </h2>
+    <blockquote>
+      {{ item.data.dated }}
+    </blockquote>
+    <p>
+      {{ item.data.excerpt }}
+      <a href="{{ item.data.imageLink }}" target="_blank" class="!no-underline">
+        {{ item.data.imageCopy }}
+      </a>
+    </p>
+    <p>
+      <a href="{{ loop.index }}/index.html">
+        Read more
+      </a>
+    </p>
+  </div>
+</div>
+{% endfor %}

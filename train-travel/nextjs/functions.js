@@ -2,7 +2,7 @@ import matter from 'gray-matter'
 import { join } from 'path'
 import { readdirSync, readFileSync } from 'fs'
 
-const directory = join(process.cwd(), 'blogs')
+const directory = join(process.cwd(), 'markdowns')
 
 export const getBlogPaths = () => {
 

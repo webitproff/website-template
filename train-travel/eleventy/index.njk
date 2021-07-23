@@ -1,0 +1,37 @@
+<h1 class="text-center">
+  Train Travel
+</h1>
+<p class="text-center">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  {% for item in collections.blogs.slice(0,3) %}
+  <div>
+    <img class="w-full object-cover h-48 md:h-56 lg:h-72" src="{{ item.data.imageSrc }}" alt="{{ item.data.imageCopy }}" />
+    <h2>
+      {{ item.data.title }}
+    </h2>
+    <blockquote>
+      {{ item.data.dated }}
+    </blockquote>
+    <p>
+      {{ item.data.excerpt }}
+      <a href="{{ item.data.imageLink }}" target="_blank" class="!no-underline">
+        {{ item.data.imageCopy }}
+      </a>
+    </p>
+    <p>
+      <!-- need to fix sub path name -->
+      <a href="blog/{{ loop.index }}/index.html">
+        Read more
+      </a>
+    </p>
+  </div>
+  {% endfor %}
+</div>
+<hr />
+<div class="text-center">
+  <a href="blog/index.html">
+    See all blog posts
+  </a>
+</div>

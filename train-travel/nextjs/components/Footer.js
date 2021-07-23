@@ -2,7 +2,7 @@ export default function Footer(){
 
   return (
     <footer className="max-w-screen-lg mx-auto flex flex-wrap mt-8">
-      <nav className="flex flex-wrap divide-x">
+      <nav className="flex flex-wrap divide-x divide-gray-200">
         <a className="px-4 my-auto !no-underline" href="https://github.com/zummon/website-template" target="_blank">
           zummon
         </a>
