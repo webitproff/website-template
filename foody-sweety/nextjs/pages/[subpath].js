@@ -30,55 +30,12 @@ export default function SubPage({ excerpt, imageCopy, imageLink, imageSrc, title
         </p>
       </div>
 
-      <div className="px-4 sm:px-8">
+      <div className="prose px-4 sm:px-8">
         <MDXRemote {...contentSl} components={{
           a: ({ children, href }) => (
-            <a className="font-bold" href={href} target="_blank">
+            <a href={href} target="_blank">
               {children}
             </a>
-          ),
-          h1: ({ children }) => (
-            <h1 className="text-4xl my-6">
-              {children}
-            </h1>
-          ),
-          h2: ({ children }) => (
-            <h2 className="text-3xl my-6">
-              {children}
-            </h2>
-          ),
-          h3: ({ children }) => (
-            <h3 className="text-2xl my-6">
-              {children}
-            </h3>
-          ),
-          h4: ({ children }) => (
-            <h4 className="text-xl my-6">
-              {children}
-            </h4>
-          ),
-          img: ({ src, alt }) => (
-            <img className="max-w-full max-h-96 object-contain mx-auto" src={src} alt={alt} />
-          ),
-          p: ({ children }) => (
-            <p className="text-lg my-4">
-              {children}
-            </p>
-          ),
-          strong: ({ children }) => (
-            <strong className="font-bold">
-              {children}
-            </strong>
-          ),
-          ol: ({ children }) => (
-            <ol className="list-decimal list-inside text-lg">
-              {children}
-            </ol>
-          ),
-          ul: ({ children }) => (
-            <ul className="list-disc list-inside text-lg">
-              {children}
-            </ul>
           ),
         }} />
       </div>

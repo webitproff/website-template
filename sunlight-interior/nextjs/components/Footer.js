@@ -26,7 +26,7 @@ export default function Footer(){
               Made by
             </h3>
             <p>
-              <a href="https://zummon.page/" target="_blank">
+              <a href="https://github.com/zummon/website-template" target="_blank">
                 zummon
               </a>
             </p>
