@@ -1,4 +1,4 @@
-import NavPart from './NavParts'
+import NavParts from './NavParts'
 
 export default function SmallHeader({ back }){
 
@@ -13,7 +13,7 @@ export default function SmallHeader({ back }){
           </footer>
         </blockquote>
         <nav>
-          <NavPart back={back} />
+          <NavParts back={back} />
         </nav>
       </div>
     </div>

@@ -1,0 +1,10 @@
+---
+pagination:
+  data: collections.subpages
+  size: 1
+  alias: item
+permalink: "/{{ item.path | slug }}/index.html"
+eleventyComputed:
+  title: "{{ item.title }}"
+---
+
