@@ -1,3 +1,4 @@
 {
-  "tags": "subpages"
+  "layout": "subBase.njk",
+  "tags": "markdowns"
 }

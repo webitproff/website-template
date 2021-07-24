@@ -5,9 +5,12 @@
     "dev": "npx tailwindcss -o _site/tailwind.css --watch",
     "build": "npx tailwindcss -o _site/tailwind.css"
   },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1"
+  },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.6"
+    "tailwindcss": "^2.2.7"
   }
 }

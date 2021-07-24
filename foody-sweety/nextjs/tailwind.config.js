@@ -13,7 +13,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.400'),
+            color: theme('colors.gray.300'),
             '[class~="lead"]': {
               color: theme('colors.gray.300'),
             },
@@ -24,7 +24,7 @@ module.exports = {
               color: theme('colors.white'),
             },
             'ol > li::before': {
-              color: theme('colors.gray.400'),
+              color: theme('colors.gray.300'),
             },
             'ul > li::before': {
               backgroundColor: theme('colors.gray.600'),
@@ -49,7 +49,7 @@ module.exports = {
               color: theme('colors.white'),
             },
             'figure figcaption': {
-              color: theme('colors.gray.400'),
+              color: theme('colors.gray.300'),
             },
             code: {
               color: theme('colors.white'),
@@ -68,6 +68,13 @@ module.exports = {
             'tbody tr': {
               borderBottomColor: theme('colors.gray.600'),
             },
+            img: {
+              maxWidth: '100%',
+              maxHeight: '24rem', /* 384px */
+              objectFit: 'contain',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }
           },
         },
       }),

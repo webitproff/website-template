@@ -15,14 +15,14 @@ export default function SubPage({ excerpt, imageCopy, imageLink, imageSrc, title
         </Link>
       </p>
 
-      <div className="px-4 sm:px-8">
-        <h1 className="text-4xl my-6 text-center">
+      <div className="prose max-w-none px-4 sm:px-8 mb-8 text-center">
+        <h1>
           {title}
         </h1>
-        <p className="text-lg my-4 text-center">
-          <img className="max-w-full max-h-96 object-contain mx-auto" src={imageSrc} alt={imageCopy} />
+        <p>
+          <img src={imageSrc} alt={imageCopy} />
         </p>
-        <p className="text-lg my-4 text-center">
+        <p>
           {excerpt} 
           <a href={imageLink} target="_blank">
             {imageCopy}
@@ -30,7 +30,7 @@ export default function SubPage({ excerpt, imageCopy, imageLink, imageSrc, title
         </p>
       </div>
 
-      <div className="prose px-4 sm:px-8">
+      <div className="prose max-w-none px-4 sm:px-8 mb-8">
         <MDXRemote {...contentSl} components={{
           a: ({ children, href }) => (
             <a href={href} target="_blank">
