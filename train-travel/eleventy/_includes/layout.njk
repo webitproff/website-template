@@ -10,13 +10,11 @@
   {%- endif %}tailwind.css">
   <title>{{ (title +' - ') if title }}Train Travel</title>
 </head>
-<body>
-  <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none sm:max-w-none lg:max-w-none xl:max-w-none px-4">
-    {% include 'header.njk' %}
+<body class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl !max-w-none px-4 dark:!prose-light">
+  {% include 'header.njk' %}
 
-    {{ content | safe }}
+  {{ content | safe }}
 
-    {% include 'footer.njk' %}
-  </div>
+  {% include 'footer.njk' %}
 </body>
 </html>

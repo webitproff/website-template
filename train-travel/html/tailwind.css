@@ -1231,8 +1231,8 @@ video {
   width: 100%;
 }
 
-.max-w-none {
-  max-width: none;
+.\!max-w-none {
+  max-width: none !important;
 }
 
 .max-w-screen-lg {
@@ -1305,6 +1305,97 @@ video {
 
 .\!no-underline {
   text-decoration: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:\!prose-light {
+    background-color: #111827 !important;
+    color: #d1d5db !important;
+  }
+
+  .dark\:\!prose-light [class~="lead"] {
+    color: #d1d5db !important;
+  }
+
+  .dark\:\!prose-light a {
+    color: #fff !important;
+  }
+
+  .dark\:\!prose-light strong {
+    color: #fff !important;
+  }
+
+  .dark\:\!prose-light ol > li::before {
+    color: #d1d5db !important;
+  }
+
+  .dark\:\!prose-light ul > li::before {
+    background-color: #4b5563 !important;
+  }
+
+  .dark\:\!prose-light hr {
+    border-color: #374151 !important;
+  }
+
+  .dark\:\!prose-light blockquote {
+    color: #e5e7eb !important;
+    border-left-color: #4b5563 !important;
+  }
+
+  .dark\:\!prose-light h1 {
+    color: #fff !important;
+  }
+
+  .dark\:\!prose-light h2 {
+    color: #fff !important;
+  }
+
+  .dark\:\!prose-light h3 {
+    color: #fff !important;
+  }
+
+  .dark\:\!prose-light h4 {
+    color: #fff !important;
+  }
+
+  .dark\:\!prose-light figure figcaption {
+    color: #d1d5db !important;
+  }
+
+  .dark\:\!prose-light code {
+    color: #fff !important;
+  }
+
+  .dark\:\!prose-light a code {
+    color: #fff !important;
+  }
+
+  .dark\:\!prose-light pre {
+    color: #e5e7eb !important;
+    background-color: #1f2937 !important;
+  }
+
+  .dark\:\!prose-light thead {
+    color: #fff !important;
+    border-bottom-color: #9ca3af !important;
+  }
+
+  .dark\:\!prose-light tbody tr {
+    border-bottom-color: #4b5563 !important;
+  }
+
+  .dark\:inline {
+    display: inline;
+  }
+
+  .dark\:hidden {
+    display: none;
+  }
+
+  .dark\:divide-gray-700 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(55, 65, 81, var(--tw-divide-opacity));
+  }
 }
 
 @media (min-width: 640px) {
@@ -1702,10 +1793,6 @@ video {
     height: 18rem;
   }
 
-  .sm\:max-w-none {
-    max-width: none;
-  }
-
   .sm\:pl-4 {
     padding-left: 1rem;
   }
@@ -1968,10 +2055,6 @@ video {
     height: 18rem;
   }
 
-  .lg\:max-w-none {
-    max-width: none;
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2214,9 +2297,5 @@ video {
 
   .xl\:prose-xl > :last-child {
     margin-bottom: 0;
-  }
-
-  .xl\:max-w-none {
-    max-width: none;
   }
 }

@@ -1,5 +1,6 @@
-import remark from 'remark'
-import html from 'remark-html'
+import Link from 'next/link'
+import { MDXRemote } from 'next-mdx-remote'
+import { serialize } from 'next-mdx-remote/serialize'
 import { getBlogPaths, getBlog } from '../../functions'
 
 export default function Blog({ contentHtml, date, excerpt, imageCopy, imageLink, imageSrc, title }){
@@ -21,7 +22,16 @@ export default function Blog({ contentHtml, date, excerpt, imageCopy, imageLink,
       </p>
       <hr />
     </div>
-    <div className="max-w-prose mx-auto" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    <div className="max-w-prose mx-auto">
+      <MDXRemote {...contentHtml} components={{
+        a: (props) => (
+          <a target="_blank" {...props}></a>
+        ),
+        Link: (props) => (
+          <Link {...props}></Link>
+        )
+      }} />
+    </div>
   </>
 }
 
@@ -35,13 +45,17 @@ export function getStaticPaths(){
   }
 }
 export async function getStaticProps({ params: { path } }){
-  const { content, title, ...others } = getBlog(path)
+  const { content, ...others } = getBlog(path)
 
   return {
     props: { 
       ...others, 
-      contentHtml: await remark().use(html).process(content).then(res => res.toString()), 
-      title: title +' - Blog'
+      contentHtml: await serialize(content, {
+        mdxOptions: {
+          remarkPlugins: [],
+          rehypePlugins: [],
+        },
+      }), 
     } 
   }
 }
