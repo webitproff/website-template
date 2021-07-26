@@ -2,7 +2,7 @@
 1 home page, 2 collection pages.
 7 subpages in the example, add more subpages by adding the data to the JSON.
 
-[Demo](https://zummon.github.io/website-template/nature-craft/html/index.html)
+Preview [HTML](https://zummon.github.io/website-template/nature-craft/html/index.html)
 
 Download 
 [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/nature-craft/html), 
@@ -15,7 +15,7 @@ Download
 
 Scroll animation
 
-[Demo](https://zummon.github.io/website-template/sunlight-interior/html/index.html)
+Preview [HTML](https://zummon.github.io/website-template/sunlight-interior/html/index.html)
 
 Download 
 [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/sunlight-interior/html), 
@@ -26,7 +26,9 @@ Download
 home, about, blog page. 
 4 subpages in the example and add more subpages by writing markdowns.
 
-[Demo](https://zummon.github.io/website-template/train-travel/html/index.html)
+Dark mode
+
+Preview [HTML](https://zummon.github.io/website-template/train-travel/html/index.html)
 
 Download 
 [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/train-travel/html), 
@@ -36,7 +38,7 @@ Download
 ## Foody Sweety
 home page, 3 subpages in the example and add more subpages by writing markdowns.
 
-[Demo](https://zummon.github.io/website-template/foody-sweety/html/index.html)
+Preview [HTML](https://zummon.github.io/website-template/foody-sweety/html/index.html)
 
 Download 
 [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/foody-sweety/html), 
@@ -48,4 +50,4 @@ Download
 
 Useful tool to help downloading the template - [DownGit](https://downgit.github.io/) by [Minhas Kamal](https://stackoverflow.com/users/4684058/minhas-kamal) from the [issue](https://stackoverflow.com/questions/7106012/)
 
-Useful sources to build websites - [design-resources-for-developers](https://github.com/bradtraversy/design-resources-for-developers) by Traversy Media
+Useful sources to build websites - [Design Resources for Developers](https://github.com/bradtraversy/design-resources-for-developers) by Traversy Media
