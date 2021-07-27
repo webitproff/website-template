@@ -4,12 +4,12 @@ pagination:
   data: blogs
   size: 1
   alias: item
-permalink: "blog/{{ item.path | slug }}/index.html"
+permalink: blog/{{ item.path | slug }}/index.html
 eleventyComputed:
   title: "{{ item.title }} - Blog"
 ---
 
-{% include 'smallHeader.njk' %}
+{% include 'header-small.njk' %}
 
 <div class="uk-section uk-section-muted">
   <div class="uk-container uk-container-xsmall">

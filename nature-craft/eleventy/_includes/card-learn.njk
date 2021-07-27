@@ -1,0 +1,20 @@
+<div class="uk-card {{ 'uk-card-secondary' if item.invert else 'uk-card-default' }}">
+  <div class="uk-card-media-top uk-height-medium uk-background-cover" 
+    style="background-image: url({{item.image.src}})"
+  ></div>
+  <div class="uk-card-body">
+    <h3 class="uk-card-title">
+      {{ item.title }}
+    </h3>
+    <p>
+      {{ item.description }}
+      <a href="{{ item.image.link }}" target="_blank">
+        {{ item.image.copy }}
+      </a>
+    </p>
+    <a class="uk-button uk-button-secondary" href="{{ 'learn/' if isHome }}{{ item.path }}/index.html">
+    <!-- <a class="uk-button uk-button-secondary" href="learn/{{ item.path }}/index.html"> -->
+      Learn
+    </a>
+  </div>
+</div>

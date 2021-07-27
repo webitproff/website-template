@@ -4,12 +4,12 @@ pagination:
   data: learns
   size: 1
   alias: item
-permalink: "learn/{{ item.path | slug }}/index.html"
+permalink: learn/{{ item.path | slug }}/index.html
 eleventyComputed:
   title: "{{ item.title }} - Learn"
 ---
 
-{% include 'smallHeader.njk' %}
+{% include 'header-small.njk' %}
 
 <div class="uk-section uk-section-muted">
   <div class="uk-container uk-container-xsmall">
