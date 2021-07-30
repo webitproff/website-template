@@ -6,6 +6,9 @@
 */nextjs/.next
 */nextjs/out
 
+*/hugo/resources
+*/hugo/public
+
 nature-craft/nuxtjs
 antique-shop
 train-travel/hugo
