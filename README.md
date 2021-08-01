@@ -1,3 +1,27 @@
+## Antique Shop
+home page, 2 subpages, 8 product page in the example and add more product by adding the data to the JSON.
+
+Build using [UIkit](https://getuikit.com/)
+
+Preview : Comming soon
+
+Download
+ [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/antique-shop/nextjs)
+
+
+## Foody Sweety
+home page, 3 subpages in the example and add more subpages by writing markdowns.
+
+Build using [Tailwind CSS](https://tailwindcss.com/)
+
+Preview [HTML](https://zummon.github.io/website-template/foody-sweety/html/index.html)
+
+Download
+ [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/foody-sweety/html),
+ [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/foody-sweety/nextjs),
+ [11ty](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/foody-sweety/eleventy)
+
+
 ## Nature Craft
 1 home page, 2 collection pages. 7 subpages in the example, add more subpages by adding the data to the JSON.
 
@@ -39,19 +63,6 @@ Download
  [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/train-travel/html),
  [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/train-travel/nextjs),
  [11ty](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/train-travel/eleventy)
-
-
-## Foody Sweety
-home page, 3 subpages in the example and add more subpages by writing markdowns.
-
-Build using [Tailwind CSS](https://tailwindcss.com/)
-
-Preview [HTML](https://zummon.github.io/website-template/foody-sweety/html/index.html)
-
-Download
- [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/foody-sweety/html),
- [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/foody-sweety/nextjs),
- [11ty](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/foody-sweety/eleventy)
 
 
 ---
