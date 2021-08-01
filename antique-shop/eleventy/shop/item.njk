@@ -1,0 +1,20 @@
+---
+back: 3
+pagination:
+  data: items
+  size: 1
+  alias: item
+permalink: /shop/{{ item.path | slug }}.html
+---
+
+<div class="uk-container uk-container-small uk-background-muted">
+  <div class="uk-padding">
+    <h1>
+      {{ item.title }}
+    </h1>
+    <img class="uk-margin-auto-left uk-margin-auto-right uk-display-block" src="{{ item.imageSrc }}" alt="{{ item.imageCopy }}" />
+    <a href="{{ item.imageLink }}" target="_blank">
+      {{ item.imageCopy }}
+    </a>
+  </div>
+</div>
