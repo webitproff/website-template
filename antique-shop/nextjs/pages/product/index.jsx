@@ -1,5 +1,5 @@
 import Product from '../../components/Product'
-import data from '../../data/products.json'
+import data from '../../products.json'
 
 export default function ProductPage({  }){
     

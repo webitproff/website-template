@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Header({ title }){
     
-  return <>
+  return (
     <header className="max-w-screen-lg mx-auto flex flex-wrap mb-8">
       <div className="flex flex-wrap">
         <h2>
@@ -31,5 +31,5 @@ export default function Header({ title }){
         </Link>
       </nav>
     </header>
-  </>
+  )
 }

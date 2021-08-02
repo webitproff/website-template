@@ -3,7 +3,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import { getBlogPaths, getBlog } from '../../functions'
 
-export default function Blog({ contentHtml, date, excerpt, imageCopy, imageLink, imageSrc, title }){
+export default function BlogItemPage({ contentHtml, date, excerpt, imageCopy, imageLink, imageSrc, title }){
 
   return <>
     <div className="max-w-prose mx-auto">

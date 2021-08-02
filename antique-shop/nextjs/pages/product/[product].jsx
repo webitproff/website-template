@@ -1,4 +1,4 @@
-import data from '../../data/products.json'
+import data from '../../products.json'
 
 export default function ShopProductPage({ description, imageCopy, imageLink, imageSrc, price, title }){
   
