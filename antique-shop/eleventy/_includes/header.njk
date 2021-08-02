@@ -3,23 +3,23 @@
     Antique Shop
   </h2>
   <ul class="uk-flex-center uk-tab">
-    <li class="{{ 'uk-active' if url === '/' else '' }}">
+    <li class="{{ 'uk-active' if page.url === '/' else '' }}">
       <a href="{{ '../' if back }}index.html">
         Home
       </a>
     </li>
-    <li class="{{ 'uk-active' if url === '/about' else '' }}">
+    <li class="{{ 'uk-active' if page.url === '/about.html' else '' }}">
       <a href="{{ '../' if back }}about.html">
         About
       </a>
     </li>
     <!-- need fix startsWith -->
-    <li class="{{ 'uk-active' if url === '/product' else '' }}">
+    <li class="{{ 'uk-active' if page.url === '/product.html' else '' }}">
       <a href="{{ '../' if back }}product.html">
         Product
       </a>
     </li>
-    <li class="{{ 'uk-active' if url === '/faq' else '' }}">
+    <li class="{{ 'uk-active' if page.url === '/faq.html' else '' }}">
       <a href="{{ '../' if back }}faq.html">
         FAQ
       </a>

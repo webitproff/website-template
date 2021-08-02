@@ -2,8 +2,10 @@
   "name": "eleventy",
   "version": "0.0.0",
   "scripts": {
-    "dev": "npx tailwindcss -o _site/tailwind.css --watch",
-    "build": "npx tailwindcss -o _site/tailwind.css"
+    "dev": "eleventy --serve",
+    "dev-css": "npx tailwindcss -o _site/tailwind.css --watch",
+    "build": "eleventy",
+    "build-css": "npx tailwindcss -o _site/tailwind.css"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",

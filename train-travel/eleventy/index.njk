@@ -21,8 +21,7 @@
       </a>
     </p>
     <p>
-      <!-- not proper sub path name -->
-      <a href="blog/{{ loop.index }}/index.html">
+      <a href="blog/{{ item.fileSlug }}.html">
         Read more
       </a>
     </p>
@@ -31,7 +30,7 @@
 </div>
 <hr />
 <div class="text-center">
-  <a href="blog/index.html">
+  <a href="blog.html">
     See all blog posts
   </a>
 </div>

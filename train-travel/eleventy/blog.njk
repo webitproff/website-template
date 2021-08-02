@@ -1,6 +1,5 @@
 ---
 title: Blog
-back: 1
 ---
 
 {% for item in collections.blogs %}
@@ -22,7 +21,7 @@ back: 1
       </a>
     </p>
     <p>
-      <a href="{{ loop.index }}/index.html">
+      <a href="blog/{{ item.fileSlug }}.html">
         Read more
       </a>
     </p>
