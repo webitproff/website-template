@@ -1,11 +1,11 @@
 import Products from '../components/Products'
 
-export default function AboutPage({  }){
+export default function AboutPage({ title }){
 
   return <>
     <div className="uk-column-1-2@m uk-column-divider uk-padding">
       <h1>
-        About
+        {title}
       </h1>
       <p>
         <a className="uk-icon-button uk-margin-small-right" uk-icon="facebook" href="#"></a>
@@ -34,7 +34,7 @@ export async function getStaticProps({  }){
 
   return {
     props: {
-      
+      title: "About"
     }
   }
 }

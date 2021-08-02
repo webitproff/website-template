@@ -1,7 +1,7 @@
 export default function Footer(){
 
   return (
-    <div className="uk-text-center uk-margin-large-top uk-margin-large-bottom">
+    <footer className="uk-text-center uk-margin-large-top uk-margin-large-bottom">
       <p className="uk-margin-small">
         Made by :
         <a href="https://github.com/zummon/website-template" target="_blank">
@@ -21,6 +21,6 @@ export default function Footer(){
           Background Photo by Sergey Sokolov on Unsplash
         </a>
       </p>
-    </div>
+    </footer>
   )
 }

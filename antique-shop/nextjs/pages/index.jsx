@@ -34,3 +34,12 @@ export default function IndexPage({  }){
     <Products end={4} />
   </>
 }
+
+export async function getStaticProps({  }){
+
+  return {
+    props: {
+      
+    }
+  }
+}

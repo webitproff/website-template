@@ -1,11 +1,11 @@
 
 
-export default function FaqPage({  }){
+export default function FaqPage({ title }){
 
   return <>
     <div className="uk-column-1-2@m uk-column-divider uk-padding">
       <h1>
-        Frequently Asked Questions
+        {title}
       </h1>
       <h3>
         What is my name?
@@ -33,7 +33,7 @@ export async function getStaticProps({  }){
 
   return {
     props: {
-      
+      title: "Frequently Asked Questions"
     }
   }
 }
