@@ -24,10 +24,10 @@ export default function Header({  }){
             </a>
           </Link>
         </li>
-        <li className={pathname.startsWith('/shop') ? 'uk-active' : ''}>
-          <Link href="/shop">
+        <li className={pathname.startsWith('/product') ? 'uk-active' : ''}>
+          <Link href="/product">
             <a>
-              Shop
+              Product
             </a>
           </Link>
         </li>

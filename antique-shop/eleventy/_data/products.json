@@ -49,7 +49,7 @@
     "imageCopy": "Photo by Mick Haupt on Unsplash",
     "imageLink": "https://unsplash.com/photos/tJefy_Vu7Po",
     "imageSrc": "https://source.unsplash.com/tJefy_Vu7Po",
-    "path": "compass",
+    "path": "compass-2",
     "price": "$999",
     "title": "Compass"
   },
@@ -58,7 +58,7 @@
     "imageCopy": "Photo by Florian Klauer on Unsplash",
     "imageLink": "https://unsplash.com/photos/mk7D-4UCfmg",
     "imageSrc": "https://source.unsplash.com/mk7D-4UCfmg",
-    "path": "typing-machine",
+    "path": "typing-machine-2",
     "price": "$999",
     "title": "Typing machine"
   },
@@ -67,7 +67,7 @@
     "imageCopy": "Photo by Ripple Qian on Unsplash",
     "imageLink": "https://unsplash.com/photos/BdvX-f_dJOk",
     "imageSrc": "https://source.unsplash.com/BdvX-f_dJOk",
-    "path": "lamp",
+    "path": "lamp-2",
     "price": "$999",
     "title": "Lamp"
   }

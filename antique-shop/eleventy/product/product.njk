@@ -1,10 +1,12 @@
 ---
 back: true
 pagination:
-  data: productData
+  data: products
   size: 1
   alias: item
-permalink: shop/{{ item.path }}.html
+permalink: 'product/{{ item.path }}.html'
+eleventyComputed:
+  title: '{{ item.title }}'
 ---
 
 <div class="uk-padding">

@@ -1,4 +1,4 @@
-import productData from '../../data/products.json'
+import data from '../../data/products.json'
 
 export default function ShopProductPage({ description, imageCopy, imageLink, imageSrc, price, title }){
   
@@ -34,7 +34,7 @@ export default function ShopProductPage({ description, imageCopy, imageLink, ima
 export function getStaticPaths(){
   
   return {
-    paths: productData.map(({ path }) => ({ 
+    paths: data.map(({ path }) => ({ 
       params: { product: path }
     })),
     fallback: false
@@ -44,7 +44,7 @@ export async function getStaticProps({ params }){
 
   return {
     props: {
-      ...productData.find(({ path }) => path === params.product)
+      ...data.find(({ path }) => path === params.product)
     }
   }
 }

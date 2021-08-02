@@ -3,10 +3,12 @@ home page, 2 subpages, 8 product page in the example and add more product by add
 
 Build using [UIkit](https://getuikit.com/)
 
-Preview : Comming soon
+Preview [HTML](https://zummon.github.io/website-template/antique-shop/html/index.html)
 
 Download
- [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/antique-shop/nextjs)
+ [HTML](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/antique-shop/html),
+ [Next.js](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/antique-shop/nextjs),
+ [11ty](https://downgit.github.io/#/home?url=https://github.com/zummon/website-template/tree/master/antique-shop/eleventy)
 
 
 ## Foody Sweety

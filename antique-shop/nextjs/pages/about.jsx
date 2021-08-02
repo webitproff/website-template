@@ -1,4 +1,5 @@
-import Products from '../components/Products'
+import Product from '../components/Product'
+import data from '../data/products.json'
 
 export default function AboutPage({ title }){
 
@@ -26,7 +27,15 @@ export default function AboutPage({ title }){
         </li>
       </ul>
     </div>
-    <Products start={4} end={8} />
+    <div className="uk-margin-top uk-margin-bottom">
+      <div className="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-grid-small" uk-grid="masonry: true">
+        {data.slice(4,8).map((item, index) => (
+          <div key={index}>
+            <Product {...item} />
+          </div>
+        ))}
+      </div>
+    </div>
   </>
 }
 
