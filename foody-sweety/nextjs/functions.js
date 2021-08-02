@@ -2,20 +2,16 @@ import matter from 'gray-matter'
 import { join } from 'path'
 import { readdirSync, readFileSync } from 'fs'
 
-const directory = join(process.cwd(), 'markdowns')
+const theDir = join(process.cwd(), 'subpages')
 
 export const getSubPagePaths = () => {
-
-  return readdirSync(directory) // ['1.md','2.md']
-    .map(file => file.slice(0, -3)) // ['1','2']
+  // ['prolog.md','finale.md']
+  return readdirSync(theDir).map(file => file.slice(0, -3))
+  //                            ['prolog','finale']
 }
 
-export const getSubPage = (path) => { // '1'
-  const { data, content } = matter(
-    readFileSync(
-      join(directory, path +'.md')
-    )
-  )
+export const getSubPage = (path) => { // 'prolog'
+  const { data, content } = matter(readFileSync(join(theDir, path +'.md')))
   return { ...data, content, path }
 }
 

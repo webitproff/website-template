@@ -1,8 +1,8 @@
 ---
-title: Foody Sweety
+layout: layout.njk
 ---
 
-{% for item in collections.markdowns %}
+{% for item in collections.subpages %}
 <div class="bg-gray-900 max-w-screen-md rounded-xl mx-auto my-8 shadow-2xl sm:flex flex-wrap">
   <div class="flex-1">
     <img class="min-h-full w-full h-56 sm:h-72 md:h-96  object-cover rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none" src="{{ item.data.imageSrc }}" alt="{{ item.data.imageCopy }}" />
@@ -18,8 +18,7 @@ title: Foody Sweety
       </a>
     </p>
     <p class="text-xl text-right mt-auto">
-      <!-- not proper sub path name -->
-      <a class="transition duration-500 ease-in-out hover:bg-gray-50 hover:text-gray-900 px-6 py-4 rounded-br-xl inline-block font-bold" href="markdowns/{{ loop.index }}/index.html">
+      <a class="transition duration-500 ease-in-out hover:bg-gray-50 hover:text-gray-900 px-6 py-4 rounded-br-xl inline-block font-bold" href="{{ item.fileSlug }}.html">
         <i class="fas fa-share"></i>
       </a>
     </p>

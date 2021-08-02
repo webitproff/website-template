@@ -6,7 +6,6 @@ export function getStaticProps(){
   return {
     props: {
       subpages: getAllSubPages(),
-      title: 'Foody Sweety'
     }
   }
 }

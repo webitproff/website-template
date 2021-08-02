@@ -3,7 +3,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import { getSubPagePaths, getSubPage } from '../functions'
 
-export default function SubPage({ excerpt, imageCopy, imageLink, imageSrc, title, contentSl }){
+export default function SubPage({ excerpt, imageCopy, imageLink, imageSrc, title, sourceContent }){
   
   return (
     <div className="bg-gray-900 max-w-screen-md rounded-xl mx-auto my-8 shadow-2xl">
@@ -31,11 +31,14 @@ export default function SubPage({ excerpt, imageCopy, imageLink, imageSrc, title
       </div>
 
       <div className="prose max-w-none px-4 sm:px-8 mb-8">
-        <MDXRemote {...contentSl} components={{
+        <MDXRemote {...sourceContent} components={{
           a: ({ children, href }) => (
             <a href={href} target="_blank">
               {children}
             </a>
+          ),
+          Link: (props) => (
+            <Link {...props}></Link>
           ),
         }} />
       </div>
@@ -54,19 +57,19 @@ export default function SubPage({ excerpt, imageCopy, imageLink, imageSrc, title
 export function getStaticPaths(){
   
   return {
-    paths: getSubPagePaths().map(subpath => (
-      { params: { subpath } }
+    paths: getSubPagePaths().map(subpage => (
+      { params: { subpage } }
     )),
     fallback: false
   }
 }
-export async function getStaticProps({ params: { subpath } }){
-  const { content, ...others } = getSubPage(subpath)
+export async function getStaticProps({ params: { subpage } }){
+  const { content, ...others } = getSubPage(subpage)
   
   return {
     props: { 
       ...others, 
-      contentSl: await serialize(content, {
+      sourceContent: await serialize(content, {
         mdxOptions: {
           remarkPlugins: [],
           rehypePlugins: [],
