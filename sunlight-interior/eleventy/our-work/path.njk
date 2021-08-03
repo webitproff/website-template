@@ -4,12 +4,12 @@ pagination:
   data: ourWorks
   size: 1
   alias: item
-permalink: "our-work/{{ item.path | slug }}/index.html"
+permalink: 'our-work/{{ item.path }}.html'
 eleventyComputed:
-  title: "{{ item.title }} - Our Works"
+  title: '{{ item.title }} - Our Works'
 ---
 
-{% include 'workHeader.njk' %}
+{% include 'header-work.njk' %}
 
 <div class="uk-section uk-section-large uk-section-muted">
   <div class="uk-container uk-container-small" uk-scrollspy="target: > *; cls: uk-animation-fade; repeat: true">
@@ -45,10 +45,10 @@ eleventyComputed:
           <img src="{{ item.image.src }}" alt="{{ item.image.copy }}" />
         </a>
       </div>
-      {% for i in item.content.images %}
+      {% for imageSrc in item.content.images %}
         <div>
-          <a class="uk-inline" href="{{ i }}">
-            <img src="{{ i }}" />
+          <a class="uk-inline" href="{{ imageSrc }}">
+            <img src="{{ imageSrc }}" />
           </a>
         </div>
       {% endfor %}

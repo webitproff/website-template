@@ -2,7 +2,7 @@
 title: Our Works
 ---
 
-{% include 'workHeader.njk' %}
+{% include 'header-work.njk' %}
 
 <div class="uk-grid-match uk-grid-collapse" uk-grid="" uk-scrollspy="target: > div; cls: uk-animation-fade; repeat: true">
   {% for item in ourWorks %}
@@ -13,7 +13,7 @@ title: Our Works
           <h2 class="uk-heading-medium">
             {{ item.title }}
           </h2>
-          <a class="uk-button uk-button-secondary uk-button-large uk-margin-small-left" href="{{ item.path }}/index.html">
+          <a class="uk-button uk-button-secondary uk-button-large uk-margin-small-left" href="our-work/{{ item.path }}.html">
             See
           </a>
         </div>
