@@ -1,12 +1,13 @@
 ---
 back: true
+shell: learn
 pagination:
   data: learns
   size: 1
   alias: item
-permalink: learn/{{ item.path | slug }}/index.html
+permalink: '{{ shell }}/{{ item.path }}.html'
 eleventyComputed:
-  title: "{{ item.title }} - Learn"
+  title: '{{ item.title }} - Learn'
 ---
 
 {% include 'header-small.njk' %}

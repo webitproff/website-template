@@ -1,12 +1,13 @@
 ---
 back: true
+shell: blog
 pagination:
   data: blogs
   size: 1
   alias: item
-permalink: blog/{{ item.path | slug }}/index.html
+permalink: '{{ shell }}/{{ item.path }}.html'
 eleventyComputed:
-  title: "{{ item.title }} - Blog"
+  title: '{{ item.title }} - Blog'
 ---
 
 {% include 'header-small.njk' %}

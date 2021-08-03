@@ -1,6 +1,5 @@
 module.exports = {
-  permalink: ({ page }) => {
-    const { filePathStem } = page
-    return filePathStem +'.html'
+  permalink: (data) => {
+    return data.page.filePathStem +'.html'
   }
 }
