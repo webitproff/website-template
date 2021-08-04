@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function NavButton({ children, href, invert }){
+export default function Button({ children, href, invert }){
 
   return (
     <Link href={href}>
