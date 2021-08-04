@@ -1,11 +1,11 @@
-export default function FaqPage(){
+export default function FaqPage({  }){
 
   return <>
 
   </>
 }
 
-export function getStaticProps(){
+export function getStaticProps({  }){
 
   return {
     props: {

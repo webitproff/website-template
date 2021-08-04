@@ -1,12 +1,12 @@
 import NavButton from '../components/NavButton'
 import Card from '../components/Card'
 
-export default function HomePage({ title, description }){
+export default function IndexPage({ title, description }){
 
   return <>
     <div className="sm:flex items-center">
       <div className="flex-1">
-        <img className="w-full h-auto" src="undraw_at_the_park.svg" />
+        <img className="w-full h-auto" src="/assets/undraw_at_the_park.svg" alt="at the park" />
       </div>
       <div className="flex-1 p-8">
         <h1 className="text-4xl mb-6 font-bold text-green-500">
@@ -18,42 +18,60 @@ export default function HomePage({ title, description }){
         <NavButton href="/#service">
           Service
         </NavButton>
-        <NavButton href="/#about">
+        <NavButton href="/#about" invert>
           About
         </NavButton>
       </div>
     </div>
     <div className="md:flex items-center md:px-4 xl:px-16" id="service">
-      <Card>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque pariatur ipsa eligendi quasi optio.
-      </Card>
-      <Card image={{ src: 'undraw_mobile_user.svg', alt: 'mobile user' }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nihil repellendus quod ad. Odit optio possimus necessitatibus quae numquam blanditiis quis quia, quisquam explicabo deserunt.
-      </Card>
-      <Card image={{ src: 'undraw_drone_delivery.svg', alt: 'drone delivery' }}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe praesentium, nam debitis eos, tempora id neque illum perspiciatis quisquam deserunt dolorum, possimus necessitatibus perferendis adipisci. Quam eos modi nobis culpa.
-      </Card>
+      <div className="flex-1 m-4">
+        <Card title="Service"
+          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque pariatur ipsa eligendi quasi optio.">
+          <NavButton href="/service">
+            See More
+          </NavButton>
+        </Card>
+      </div>
+      <div className="flex-1 m-4">
+        <Card image={{ src: '/assets/undraw_mobile_user.svg', alt: 'mobile user' }}
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nihil repellendus quod ad. Odit optio possimus necessitatibus quae numquam blanditiis quis quia, quisquam explicabo deserunt.">
+          
+        </Card>
+      </div>
+      <div className="flex-1 m-4">
+        <Card image={{ src: '/assets/undraw_drone_delivery.svg', alt: 'drone delivery' }}
+          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe praesentium, nam debitis eos, tempora id neque illum perspiciatis quisquam deserunt dolorum, possimus necessitatibus perferendis adipisci. Quam eos modi nobis culpa.">
+          
+        </Card>
+      </div>
     </div>
-    <div className="" id="about">
-      <Card>
-
-      </Card>
-      <img className="w-full h-auto" src="undraw_Fall_is_coming.svg" />
+    <div className="sm:flex items-center" id="about">
+      <div className="flex-1">
+        <img className="w-full h-auto" src="/assets/undraw_Fall_is_coming.svg" alt="Fall is coming" />
+      </div>
+      <div className="flex-1 m-4">
+        <Card title="About" 
+          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis minus omnis nulla, in nam et, unde illo asperiores quibusdam quaerat commodi a quisquam dicta repellat nisi earum assumenda beatae? Praesentium!">
+          <NavButton href="/about" invert>
+            See More
+          </NavButton>
+        </Card>
+      </div>
     </div>
     <div className="sm:flex items-center">
       <div className="flex-1 p-8">
-        <h1 className="text-4xl mb-6 font-bold text-green-500">
+        <h1 className="text-4xl mb-6 font-bold">
           Frequently asked questions
         </h1>
         <p className="text-xl mb-4 font-semibold text-gray-600">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ullam earum atque molestias dolores voluptatem veritatis placeat quibusdam reiciendis laudantium, officia, non nam, eaque mollitia omnis vel magnam commodi sequi?
         </p>
-        <NavButton href="/faq">
+        <NavButton href="/faq" invert>
           See More
         </NavButton>
       </div>
       <div className="flex-1">
-        <img className="w-full h-auto" src="undraw_deliveries.svg" />
+        <img className="w-full h-auto" src="/assets/undraw_deliveries.svg" alt="deliveries" />
       </div>
     </div>
   </>

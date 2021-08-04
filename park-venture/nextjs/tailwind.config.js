@@ -6,11 +6,7 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class' or false
   theme: {
-    extend: {
-      backgroundImage: theme => ({
-        'about-me': "url(/undraw_Fall_is_coming.svg)",
-      })
-    },
+    extend: {},
   },
   variants: {
     extend: {},

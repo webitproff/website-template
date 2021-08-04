@@ -1,11 +1,17 @@
-export default function Card({ image, children }){
+export default function Card({ children, image, title, description }){
 
   return (
-    <div className="flex-1 p-4 m-4 border-2 rounded-xl transition duration-500 ease-in-out text-gray-600 hover:text-black hover:border-green-500">
+    <div className="p-4 border-2 rounded-xl bg-white transition duration-500 ease-in-out text-gray-600 hover:text-black hover:border-green-500">
       {image && <img className="w-full h-auto block mb-6" {...image} />}
-      <p className="text-xl font-semibold ">
-        {children}
+      {title && (
+        <h2 className="text-3xl mb-4 font-bold">
+          {title}
+        </h2>
+      )}
+      <p className="text-xl mb-4 font-semibold">
+        {description}
       </p>
+      {children}
     </div>
   )
 }
