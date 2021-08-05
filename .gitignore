@@ -9,5 +9,5 @@
 */hugo/resources
 */hugo/public
 
-nature-craft/nuxtjs
-train-travel/hugo
+*/nuxtjs/.nuxt
+*/nuxtjs/dist

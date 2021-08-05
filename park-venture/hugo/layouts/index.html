@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/tailwind.css">
+  <title>{{ .Title }}</title>
+  <!-- it somehow doesn't work -->
+  <meta name="description" content="{{ .Params.description }}" />
+</head>
+<body>
+  <div class="sm:flex items-center">
+    <div class="flex-1">
+      <img class="w-full h-auto" src="/assets/undraw_at_the_park.svg" alt="at the park" />
+    </div>
+    <div class="flex-1 p-8">
+      <h1 class="text-4xl mb-6 font-bold text-green-500">
+        {{ .Title }}
+      </h1>
+      <p class="text-xl mb-4 font-semibold text-gray-600">
+        {{ .Description }}
+      </p>
+      <a class="inline-block px-6 py-2 m-4 text-lg font-semibold rounded-xl transition duration-500 ease-in-out hover:bg-white text-white hover:ring-2 bg-green-500 hover:text-green-500 ring-green-500" href="#service">
+        Service
+      </a>
+      <a class="inline-block px-6 py-2 m-4 text-lg font-semibold rounded-xl transition duration-500 ease-in-out hover:bg-white text-white hover:ring-2 bg-gray-600 hover:text-gray-600 ring-gray-600" href="#service">
+        About
+      </a>
+    </div>
+  </div>
+  <div class="md:flex items-center md:px-4 xl:px-16" id="service">
+    <div class="flex-1 m-4">
+      <div class="p-4 border-2 rounded-xl bg-white transition duration-500 ease-in-out text-gray-600 hover:text-black hover:border-green-500">
+        <h2 class="text-3xl mb-4 font-bold">
+          Service
+        </h2>
+        <p class="text-xl mb-4 font-semibold">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque pariatur ipsa eligendi quasi optio.
+        </p>
+      </div>
+    </div>
+    <div class="flex-1 m-4">
+      <div class="p-4 border-2 rounded-xl bg-white transition duration-500 ease-in-out text-gray-600 hover:text-black hover:border-green-500">
+        <img class="w-full h-auto block mb-6" src="/assets/undraw_mobile_user.svg" alt="mobile user" />
+        <p class="text-xl mb-4 font-semibold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nihil repellendus quod ad. Odit optio possimus necessitatibus quae numquam blanditiis quis quia, quisquam explicabo deserunt.
+        </p>
+        <a class="inline-block px-6 py-2 m-4 text-lg font-semibold rounded-xl transition duration-500 ease-in-out hover:bg-white text-white hover:ring-2 bg-gray-600 hover:text-gray-600 ring-gray-600" href="#">
+          Get
+        </a>
+      </div>
+    </div>
+    <div class="flex-1 m-4">
+      <div class="p-4 border-2 rounded-xl bg-white transition duration-500 ease-in-out text-gray-600 hover:text-black hover:border-green-500">
+        <img class="w-full h-auto block mb-6" src="/assets/undraw_drone_delivery.svg" alt="drone delivery" />
+        <p class="text-xl mb-4 font-semibold">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe praesentium, nam debitis eos, tempora id neque illum perspiciatis quisquam deserunt dolorum, possimus necessitatibus perferendis adipisci. Quam eos modi nobis culpa.
+        </p>
+        <a class="inline-block px-6 py-2 m-4 text-lg font-semibold rounded-xl transition duration-500 ease-in-out hover:bg-white text-white hover:ring-2 bg-green-500 hover:text-green-500 ring-green-500" href="#">
+          Get
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="sm:flex items-center" id="about">
+    <div class="flex-1">
+      <img class="w-full h-auto" src="/assets/undraw_Fall_is_coming.svg" alt="Fall is coming" />
+    </div>
+    <div class="flex-1 m-4">
+      <div class="p-4 border-2 rounded-xl bg-white transition duration-500 ease-in-out text-gray-600 hover:text-black hover:border-green-500">
+        <h2 class="text-3xl mb-4 font-bold">
+          About
+        </h2>
+        <p class="text-xl mb-4 font-semibold">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis minus omnis nulla, in nam et, unde illo asperiores quibusdam quaerat commodi a quisquam dicta repellat nisi earum assumenda beatae? Praesentium!
+        </p>
+        <a class="inline-block px-6 py-2 m-4 text-lg font-semibold rounded-xl transition duration-500 ease-in-out hover:bg-white text-white hover:ring-2 bg-green-500 hover:text-green-500 ring-green-500" href="#">
+          <i class="fab fa-google"></i>
+        </a>
+        <a class="inline-block px-6 py-2 m-4 text-lg font-semibold rounded-xl transition duration-500 ease-in-out hover:bg-white text-white hover:ring-2 bg-gray-600 hover:text-gray-600 ring-gray-600" href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="inline-block px-6 py-2 m-4 text-lg font-semibold rounded-xl transition duration-500 ease-in-out hover:bg-white text-white hover:ring-2 bg-gray-600 hover:text-gray-600 ring-gray-600" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="inline-block px-6 py-2 m-4 text-lg font-semibold rounded-xl transition duration-500 ease-in-out hover:bg-white text-white hover:ring-2 bg-gray-600 hover:text-gray-600 ring-gray-600" href="#">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="sm:flex items-center">
+    <div class="flex-1 p-8">
+      <h1 class="text-4xl mb-6 font-bold">
+        Frequently asked questions
+      </h1>
+      <p class="text-xl mb-4 font-semibold text-gray-600">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ullam earum atque molestias dolores voluptatem veritatis placeat quibusdam reiciendis laudantium, officia, non nam, eaque mollitia omnis vel magnam commodi sequi?
+      </p>
+      <a class="inline-block px-6 py-2 m-4 text-lg font-semibold rounded-xl transition duration-500 ease-in-out hover:bg-white text-white hover:ring-2 bg-gray-600 hover:text-gray-600 ring-gray-600" href="#">
+        See More
+      </a>
+    </div>
+    <div class="flex-1">
+      <img class="w-full h-auto" src="/assets/undraw_deliveries.svg" alt="deliveries" />
+    </div>
+  </div>
+  <footer class="p-8 text-center">
+    <p class="font-semibold">
+      Made by 
+      <a class="text-green-500" href="https://github.com/zummon/website-template" target="_blank">
+        zummon
+      </a>
+      . Build tools 
+      <a class="text-gray-600" href="https://tailwindcss.com/" target="_blank">
+        Tailwind CSS
+      </a>,
+      <a class="text-gray-600" href="https://undraw.co/" target="_blank">
+        unDraw
+      </a>,
+      <a class="text-gray-600" href="https://fontawesome.com/" target="_blank">
+        Font Awesome
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
