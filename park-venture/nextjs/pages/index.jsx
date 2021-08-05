@@ -62,7 +62,18 @@ export default function IndexPage({ title, description }){
           title="About" 
           description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis minus omnis nulla, in nam et, unde illo asperiores quibusdam quaerat commodi a quisquam dicta repellat nisi earum assumenda beatae? Praesentium!"
         >
-          
+          <Button href="/#">
+            <i className="fab fa-google"></i>
+          </Button>
+          <Button href="/#" invert>
+            <i className="fab fa-facebook-f"></i>
+          </Button>
+          <Button href="/#" invert>
+            <i className="fab fa-twitter"></i>
+          </Button>
+          <Button href="/#" invert>
+            <i className="fab fa-pinterest-p"></i>
+          </Button>
         </Card>
       </div>
     </div>
@@ -84,9 +95,19 @@ export default function IndexPage({ title, description }){
     </div>
     <footer className="p-8 text-center">
       <p className="font-semibold">
-        Copyright @ 
+        Made by 
         <a className="text-green-500" href="https://github.com/zummon/website-template" target="_blank">
           zummon
+        </a>
+        . Build tools 
+        <a className="text-gray-600" href="https://tailwindcss.com/" target="_blank">
+          Tailwind CSS
+        </a>,
+        <a className="text-gray-600" href="https://undraw.co/" target="_blank">
+          unDraw
+        </a>,
+        <a className="text-gray-600" href="https://fontawesome.com/" target="_blank">
+          Font Awesome
         </a>
       </p>
     </footer>
