@@ -1,0 +1,62 @@
+[
+  {
+    "author": null, 
+    "codes": ["html", "nextjs", "eleventy"],
+    "date": null, 
+    "description": "home page, 2 subpages, 8 product page in the example and add more product by adding the data to the JSON.", 
+    "keywords": "UIkit, HTML, Next.js, 11ty",
+    "path": "antique-shop",
+    "screens": ["desktop", "phone", "tablet"],
+    "title": "Antique Shop"
+  },
+  {
+    "author": null, 
+    "codes": ["html", "nextjs", "eleventy"],
+    "date": null, 
+    "description": "home page, 3 subpages in the example and add more subpages by writing markdowns.", 
+    "keywords": "Tailwind CSS, HTML, Next.js, 11ty",
+    "path": "foody-sweety",
+    "screens": ["desktop", "phone", "tablet"],
+    "title": "Foody Sweety"
+  },
+  {
+    "author": null, 
+    "codes": ["html", "nextjs", "eleventy"],
+    "date": null, 
+    "description": "1 home page, 2 collection pages. 7 subpages in the example, add more subpages by adding the data to the JSON.", 
+    "keywords": "UIkit, HTML, Next.js, 11ty",
+    "path": "nature-craft",
+    "screens": ["desktop", "phone", "tablet"],
+    "title": "Nature Craft"
+  },
+  {
+    "author": null, 
+    "codes": ["html", "nextjs", "eleventy"],
+    "date": null, 
+    "description": "Landing Page.", 
+    "keywords": "UIkit, HTML, Next.js, 11ty",
+    "path": "park-venture",
+    "screens": ["desktop", "phone", "tablet"],
+    "title": "Park Venture"
+  },
+  {
+    "author": null, 
+    "codes": ["html", "nextjs", "eleventy"],
+    "date": null, 
+    "description": "1 home page, 1 collection page. 4 subpages in the example and add more subpages by adding the data to the JSON. With scroll animation.", 
+    "keywords": "UIkit, HTML, Next.js, 11ty",
+    "path": "sunlight-interior",
+    "screens": ["desktop", "phone", "tablet"],
+    "title": "Sunlight Interior"
+  },
+  {
+    "author": null, 
+    "codes": ["html", "nextjs", "eleventy"],
+    "date": null, 
+    "description": "home, about, blog page. 4 subpages in the example and add more subpages by writing markdowns. With light and dark mode.", 
+    "keywords": "Tailwind CSS, HTML, Next.js, 11ty",
+    "path": "train-travel",
+    "screens": ["desktop", "phone", "tablet"],
+    "title": "Train Travel"
+  }
+]
