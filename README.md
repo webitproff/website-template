@@ -1,6 +1,6 @@
-# [Visualization](https://zummon.page/website-template)
+# [See all templates](https://zummon.page/website-template)
 
----
+# Additional 
 
 Useful tool to help downloading the template - [DownGit](https://downgit.github.io/) by [Minhas Kamal](https://stackoverflow.com/users/4684058/minhas-kamal) from the [issue](https://stackoverflow.com/questions/7106012/)
 
