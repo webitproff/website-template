@@ -1,0 +1,16 @@
+{
+  "name": "nextjs",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "dev-css": "npx tailwindcss -o _site/tailwind.css --watch",
+    "build": "eleventy",
+    "build-css": "npx tailwindcss -o _site/tailwind.css"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}

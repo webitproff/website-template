@@ -1,0 +1,16 @@
+{
+  "name": "hugo",
+  "version": "0.0.0",
+  "scripts": {
+    "dev-css": "npx tailwindcss --output static/tailwind.css --watch",
+    "dev": "hugo server",
+    "build-css": "npx tailwindcss --output static/tailwind.css",
+    "build": "hugo"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}
