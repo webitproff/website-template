@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "scripts": {},
   "dependencies": {
-    "@ant-design/icons": "^4.6.2",
     "@tailwindcss/typography": "^0.4.1",
     "gray-matter": "^4.0.3",
     "next": "^11.0.1",
